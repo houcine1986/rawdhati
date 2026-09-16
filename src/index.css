@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --vp-bg: #F0F7FF;
+    --vp-text: #1E293B;
+    --vp-primary: #1E88E5;
+    --vp-primary-hover: #1976D2;
+    --vp-yellow-active: #FFDF6D;
+    --vp-secondary: #0284C7;
+    --vp-accent: #38BDF8;
+    --vp-urgent: #EF4444;
+    --vp-success: #16A34A;
+    --vp-warning: #FBBF24;
+    --vp-peach: #FED7AA;
+    --vp-mint: #86EFAC;
+    --vp-sun: #FDE047;
+  }
+
+  body {
+    background-color: #F0F7FF;
+    color: #1E293B;
+    font-family: 'Tajawal', 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+@layer components {
+  /* Cheerful Kindergarten Palette Utility Classes */
+  .btn-primary-vp {
+    background-color: #1E88E5;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-primary-vp:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 14px rgba(30, 136, 229, 0.35);
+  }
+
+  .btn-urgent-vp {
+    background-color: #EF4444;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-urgent-vp:hover {
+    background-color: #DC2626;
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+  }
+
+  .btn-success-vp {
+    background-color: #16A34A;
+    color: #ffffff;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-success-vp:hover {
+    background-color: #15803D;
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.35);
+  }
+
+  .badge-urgent-vp {
+    background-color: #FEE2E2;
+    color: #DC2626;
+    border: 1px solid #FECACA;
+  }
+
+  .badge-success-vp {
+    background-color: #DCFCE7;
+    color: #15803D;
+    border: 1px solid #BBF7D0;
+  }
+
+  .badge-primary-vp {
+    background-color: #F0F7FF;
+    color: #0284C7;
+    border: 1px solid #BAE6FD;
+  }
+
+  .card-vibrant {
+    background-color: #ffffff;
+    border: 1px solid #E0F2FE;
+    border-radius: 32px;
+    box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.06), 0 8px 10px -6px rgba(2, 132, 199, 0.04);
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbars matching vibrant palette */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #A29BFE;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6C5CE7;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none;
+  }
+}
+
+

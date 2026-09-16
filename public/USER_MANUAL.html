@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل المستخدم الشامل - منظومة روضتي لإدارة رياض الأطفال والمحاضن</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    @media print {
+      body {
+        background: white !important;
+        padding: 0 !important;
+        color: #000 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .page-break {
+        page-break-after: always;
+        break-after: page;
+      }
+      .avoid-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      @page {
+        margin: 1.2cm;
+        size: A4 portrait;
+      }
+    }
+  </style>
+</head>
+<body class="p-3 sm:p-6 md:p-10">
+
+  <!-- Floating Sticky Action Bar for Web Viewing -->
+  <div class="no-print max-w-4xl mx-auto mb-6 bg-slate-900 text-white p-4 rounded-3xl shadow-xl flex items-center justify-between flex-wrap gap-4 border border-slate-800">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center font-black text-xl">
+        📖
+      </div>
+      <div>
+        <h2 class="text-sm sm:text-base font-extrabold">دليل المستخدم الرسمي والتوثيق الشامل (PDF)</h2>
+        <p class="text-xs text-slate-400">جاهز للحفظ أو الطباعة المباشرة بصيغة PDF</p>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-2">
+      <button onclick="window.print()" class="px-5 py-2.5 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-xs rounded-xl shadow-lg transition-all cursor-pointer flex items-center gap-2">
+        <span>🖨️ حفظ كملف PDF / طباعة</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Printable Document Container -->
+  <div class="max-w-4xl mx-auto bg-white p-6 sm:p-12 rounded-3xl shadow-lg border border-slate-200/80 space-y-12">
+
+    <!-- ================= COVER PAGE ================= -->
+    <div class="text-center py-12 px-4 border-b-2 border-slate-100 space-y-6 avoid-break">
+      <div class="w-24 h-24 rounded-3xl bg-gradient-to-tr from-amber-400 via-orange-400 to-amber-500 text-white flex items-center justify-center text-5xl mx-auto shadow-xl shadow-amber-200">
+        🏠
+      </div>
+
+      <div class="space-y-3">
+        <span class="px-4 py-1.5 rounded-full text-xs font-black bg-indigo-50 text-indigo-700 border border-indigo-200 inline-block">
+          الوثيقة الإرشادية والتقنية الشاملة لمديري ومربيات رياض الأطفال
+        </span>
+        <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
+          دليل المستخدم الشامل لمنظومة إدارة الروضة
+        </h1>
+        <p class="text-base sm:text-lg font-bold text-slate-600 max-w-2xl mx-auto">
+          المنظومة المتكاملة لإدارة الأطفال، الحضور والأمان، الشؤون المالية، البيداغوجيا والبرامج اليومية
+        </p>
+      </div>
+
+      <!-- Feature Badges -->
+      <div class="flex items-center justify-center gap-3 flex-wrap pt-2">
+        <span class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-emerald-50 text-emerald-700 border border-emerald-200">
+          🟢 100% يعمل بدون إنترنت (Offline Safe)
+        </span>
+        <span class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-sky-50 text-sky-700 border border-sky-200">
+          🇹🇳 مطابقة للدينار التونسي والقوانين التربوية
+        </span>
+        <span class="px-3.5 py-1.5 rounded-xl text-xs font-extrabold bg-amber-50 text-amber-800 border border-amber-200">
+          🛡️ حماية مشددة للمعطيات الشخصية
+        </span>
+      </div>
+
+      <!-- System Metadata Box -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs text-right mt-6">
+        <div>
+          <span class="text-slate-400 block text-[10px]">البرنامج:</span>
+          <span class="font-bold text-slate-800">Rawdati Desktop Master</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block text-[10px]">الإصدار:</span>
+          <span class="font-bold text-slate-800 font-mono">v1.0.0 (Offline Edition)</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block text-[10px]">العملة والمنطقة:</span>
+          <span class="font-bold text-slate-800">تونس (TND)</span>
+        </div>
+        <div>
+          <span class="text-slate-400 block text-[10px]">الدعم التقني:</span>
+          <span class="font-bold text-indigo-600">نشط ومدعوم</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= CHAPTER 0: INTRODUCTION ================= -->
+    <section class="space-y-6 avoid-break">
+      <div class="flex items-center gap-3 border-r-4 border-amber-500 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-black">
+          0
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">مقدمة عامة وهيكل البرنامج</h2>
+          <p class="text-xs text-slate-500">نظرة عامة على الوحدات والمفاهيم الأساسية لتشغيل الروضة</p>
+        </div>
+      </div>
+
+      <div class="text-xs sm:text-sm text-slate-700 leading-relaxed space-y-4">
+        <p>
+          تم تطوير هذه المنظومة خصيصاً لتوفير حل شامل يغني مديري ومربيات رياض الأطفال عن السجلات الورقية والأنظمة المعقدة. تتميز المنظومة بكونها <strong>تعمل بالكامل على حاسوبك بدون إنترنت</strong>، مما يوفر سرعة استجابة فائقة واستقلالية تامة.
+        </p>
+
+        <!-- Modules Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-right">
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-amber-600">1. إدارة الأطفال</div>
+            <div class="text-[11px] text-slate-500 mt-1">الملف الشامل، التصفية حسب الفوج، البطاقات المدرسية</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-sky-600">2. الحضور والأمان</div>
+            <div class="text-[11px] text-slate-500 mt-1">تسجيل فوري، باركود، والتحقق من المخولين بالاستلام</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-emerald-600">3. المالية والمصاريف</div>
+            <div class="text-[11px] text-slate-500 mt-1">توليد فواتير تلقائي، وصولات بالدينار، وتقارير أرباح</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-violet-600">4. الأقسام والمربيات</div>
+            <div class="text-[11px] text-slate-500 mt-1">توزيع الأفواج، طاقة الاستيعاب، وملفات الكادر التربوي</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-rose-600">5. الصحة والتغذية</div>
+            <div class="text-[11px] text-slate-500 mt-1">جدول الوجبات الأسبوعي، الحساسيات، وسجل الحوادث</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-yellow-600">6. البيداغوجيا والأنشطة</div>
+            <div class="text-[11px] text-slate-500 mt-1">تخطيط الأنشطة الأسبوعية، وبطاقات تقييم مكتسبات الطفل</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-cyan-600">7. النقل المدرسي</div>
+            <div class="text-[11px] text-slate-500 mt-1">مسارات الحافلات، السائق والمرافقة، وقوائم الركاب</div>
+          </div>
+          <div class="p-3 bg-slate-50 rounded-2xl border border-slate-200">
+            <div class="font-black text-slate-800">8. الأمان والنسخ</div>
+            <div class="text-[11px] text-slate-500 mt-1">صلاحيات دقيقة، وحفظ النسخ الاحتياطية على USB</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 1: ACTIVATION ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-emerald-500 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-black">
+          1
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">التثبيت والتفعيل للعمل بدون إنترنت</h2>
+          <p class="text-xs text-slate-500">نظام الترخيص الآمن والأدوار الإدارية</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-700">
+        <p>
+          يتم تفعيل البرنامج عبر مفتاح ترخيص مرتبط بـ <strong>معرف الجهاز (Machine ID)</strong>، مما يوفر ترخيصاً دائماً مدى الحياة بدون أي اشتراكات سحابية إجبارية.
+        </p>
+
+        <div class="p-4 bg-emerald-50 border border-emerald-200 rounded-2xl space-y-1 text-emerald-900 text-xs">
+          <div class="font-black">🛡️ مستويات وصلاحيات الدخول (User Roles):</div>
+          <ul class="space-y-1 text-[11px] text-emerald-800 mt-1">
+            <li>• <strong>المشرف العام (Director / Super Admin):</strong> كامل الصلاحيات لإدارة الحسابات، المالية، الإعدادات، وكافة الأقسام.</li>
+            <li>• <strong>الإدارة والمالية (Admin):</strong> إدارة الأطفال، الحضور، الفواتير والوصولات، والنقل المدرسي.</li>
+            <li>• <strong>المربية (Educator):</strong> تسجيل حضور أطفال فوجها، متابعة الملف الصحي والوجبات، وتسجيل التقييمات البيداغوجية.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 2: DASHBOARD ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-indigo-500 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-black">
+          2
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">لوحة القيادة والمؤشرات الحيوية اليومية</h2>
+          <p class="text-xs text-slate-500">متابعة فورية للحضور، المستحقات المالية، والتنبيهات الذكية</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-700">
+        <p>
+          تمنحك لوحة القيادة رؤية شاملة ولحظية لجميع نشاطات الروضة:
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+          <div class="p-3.5 bg-slate-50 rounded-2xl border border-slate-200 space-y-1">
+            <strong class="text-indigo-900 font-bold block">📊 الإحصائيات الفورية:</strong>
+            <p className="text-slate-600 text-[11px]">مجموع الأطفال المسجلين، نسبة الحضور اليومي، إجمالي الفواتير غير المستخلصة، والرصيد المالي الشهري.</p>
+          </div>
+          <div class="p-3.5 bg-slate-50 rounded-2xl border border-slate-200 space-y-1">
+            <strong class="text-amber-900 font-bold block">⚠️ كشف الغياب المتتالي وواتساب:</strong>
+            <p className="text-slate-600 text-[11px]">رصد آلي لأي طفل غائب لمدة 3 أيام متتالية مع زر فوري لإرسال رسالة تذكير واطمئنان لولي الأمر عبر WhatsApp بنقرة واحدة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 3: CHILDREN MANAGEMENT ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-pink-500 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-pink-100 text-pink-700 flex items-center justify-center font-black">
+          3
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">إدارة الأطفال، التسجيل والتصفية بالأفواج</h2>
+          <p class="text-xs text-slate-500">إدارة الملفات الشاملة، بطاقات التلاميذ الذكية، والفلاتر السريعة</p>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-700">
+        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 space-y-2">
+          <h4 class="font-extrabold text-slate-900">البيانات المتوفرة في ملف كل طفل:</h4>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-slate-600">
+            <li>✓ الاسم واللقب وتاريخ الميلاد (حساب السن الآلي).</li>
+            <li>✓ تعيين الفوج التربوي والمربية المشرفة.</li>
+            <li>✓ أرقام هواتف الأب والأم ورقم الطوارئ البديل.</li>
+            <li>✓ قائمة الأشخاص المخولين بالاستلام وبطاقات هوياتهم.</li>
+            <li>✓ الملف الصحي (الحساسيات الغذائية والأدوية).</li>
+            <li>✓ الخدمات الإضافية (نصف إقامة، نقل، نوادي).</li>
+          </ul>
+        </div>
+        
+        <div class="p-3.5 bg-amber-50 border border-amber-200 rounded-2xl text-xs text-amber-900">
+          💡 <strong>شريط التصفية السريعة للأفواج:</strong> تجد في أعلى صفحة الأطفال بطاقات لجميع الفصول؛ بالنقر على أي فوج يتم عرض أطفاله فقط مع إظهار طاقة الاستيعاب ونسبة الامتلاء.
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 4: ATTENDANCE & SECURITY ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-sky-500 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center font-black">
+          4
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">الحضور، أمان الاستلام وماسح الباركود</h2>
+          <p class="text-xs text-slate-500">تسجيل الدخول والانصراف، التحقق من المخولين، وطباعة السجلات</p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-xs sm:text-sm text-slate-700">
+        <p>
+          يوفر النظام طريقتين لتسجيل الحضور:
+        </p>
+        <ol class="space-y-2 text-xs text-slate-600 list-decimal list-inside pr-1">
+          <li><strong>التسجيل اليدوي السريع:</strong> تحديد الحالة (حاضر / غائب / متأخر / معذور) أو النقر على "حضور الفوج بالكامل" لتسجيل الجميع بضغطة زر.</li>
+          <li><strong>المسح الضوئي (Barcode & QR Code):</strong> تمرير بطاقة التلميذ أمام قارئ الباركود أو كاميرا الحاسوب لتسجيل الدخول الفوري.</li>
+          <li><strong>التحقق من المستلم:</strong> إظهار بطاقة الشخص المخول بالاستلام وهاتفه لمنع تسليم الطفل لغير المصرح لهم.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 5: FINANCE & INVOICING ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-emerald-600 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-black">
+          5
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">الشؤون المالية، الفواتير والوصولات والمصاريف</h2>
+          <p class="text-xs text-slate-500">الفواتير الشهرية، وصولات القبض الرسمية، ومتابعة الأرباح والخسائر</p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-xs sm:text-sm text-slate-700">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+          <div class="p-3.5 bg-slate-50 rounded-2xl border border-slate-200">
+            <strong class="text-emerald-900 font-bold block mb-1">1. توليد الفواتير الآلي</strong>
+            <p class="text-[11px] text-slate-500">إنشاء فواتير الشهر الجديد لكافة الأطفال بضغطة زر مع مراعاة النوادي والخدمات المسجلة.</p>
+          </div>
+          <div class="p-3.5 bg-slate-50 rounded-2xl border border-slate-200">
+            <strong class="text-emerald-900 font-bold block mb-1">2. استخلاص وطباعة الوصل</strong>
+            <p class="text-[11px] text-slate-500">تسجيل المقبوضات وطباعة وصل استخلاص رسمي مرقم يحتوي تفقيط المبلغ بالدينار التونسي.</p>
+          </div>
+          <div class="p-3.5 bg-slate-50 rounded-2xl border border-slate-200">
+            <strong class="text-emerald-900 font-bold block mb-1">3. تسجيل المصاريف</strong>
+            <p class="text-[11px] text-slate-500">حصر نفقات الكراء، الفواتير، رواتب المربيات، ومواد التغذية لحساب صافي الربح الدقيق.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 6: PEDAGOGY, HEALTH & TRANSPORT ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-violet-500 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-violet-100 text-violet-700 flex items-center justify-center font-black">
+          6
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">الوحدات التربوية، الصحية والنقل المدرسي</h2>
+          <p class="text-xs text-slate-500">الأنشطة، التقييم البيداغوجي، جدول الوجبات، ومسارات الحافلات</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-700">
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 space-y-1">
+          <strong class="text-indigo-900 font-bold block">📚 البيداغوجيا والتقييم:</strong>
+          <p class="text-[11px] text-slate-500">تخطيط الأنشطة الأسبوعية وطباعة دفتر تقييم مهارات الطفل (الحركية، اللغوية، الاجتماعية) لتسليمه للأولياء.</p>
+        </div>
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 space-y-1">
+          <strong class="text-rose-900 font-bold block">🥗 الصحة والوجبات:</strong>
+          <p class="text-[11px] text-slate-500">تحديد جدول وجبات الأسبوع، ومتابعة الحساسيات وسجل الإسعافات الأولية والحوادث الطارئة.</p>
+        </div>
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 space-y-1">
+          <strong class="text-cyan-900 font-bold block">🚌 النقل المدرسي:</strong>
+          <p class="text-[11px] text-slate-500">تنظيم خطوط الحافلات، بيانات السائق والمرافقة، وقوائم الأطفال المسجلين بكل مسار.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CHAPTER 7: BACKUP & SECURITY ================= -->
+    <section class="space-y-6 avoid-break pt-4 border-t border-slate-100">
+      <div class="flex items-center gap-3 border-r-4 border-slate-800 pr-3">
+        <div class="w-9 h-9 rounded-xl bg-slate-200 text-slate-800 flex items-center justify-center font-black">
+          7
+        </div>
+        <div>
+          <h2 class="text-xl font-black text-slate-900">الصلاحيات والنسخ الاحتياطي على USB</h2>
+          <p class="text-xs text-slate-500">حماية البيانات من الفقدان والتحكم الدقيق في أذونات المستخدمين</p>
+        </div>
+      </div>
+
+      <div class="p-4 bg-slate-900 text-white rounded-3xl space-y-3 text-xs">
+        <div class="font-extrabold text-amber-300 flex items-center gap-2">
+          <span>💾 كيفية حفظ نسخة احتياطية على فلاش ديسك (USB):</span>
+        </div>
+        <ol class="space-y-1.5 text-slate-200 text-[11px] list-decimal list-inside pr-1">
+          <li>انقر على أيقونة التحميل (Download) في الشريط العلوي، أو ادخل إلى "الإعدادات > النسخ الاحتياطي".</li>
+          <li>سيتم حفظ ملف <code>.json</code> كامل يحتوي على جميع السجلات وقواعد البيانات فورياً.</li>
+          <li>انسخ هذا الملف إلى مفتاح USB خارجي للاحتفاظ بنسخة آمنة أسبوعياً.</li>
+          <li>في حال تغيير الحاسوب، يمكنك الضغط على "استعادة نسخة احتياطية" واختيار الملف لتعود جميع البيانات كما كانت في ثوانٍ معدودة.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <div class="pt-8 border-t border-slate-200 text-center text-xs text-slate-400 space-y-1 avoid-break">
+      <p class="font-bold text-slate-600">منظومة إدارة الروضة المتكاملة • Rawdati Management Master</p>
+      <p>جميع الحقوق محفوظة © 2026 - الإصدار المكتبي الدائم</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

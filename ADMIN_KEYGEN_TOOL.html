@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مولّد مفاتيح التراخيص للمطور والمشرف العام | Rawdati KeyGen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+    .font-mono-key {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-10 px-4 flex items-center justify-center">
+
+  <div class="max-w-2xl w-full bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl p-6 sm:p-8 space-y-6 relative overflow-hidden">
+    
+    <!-- Decorative glow -->
+    <div class="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header -->
+    <div class="flex items-center justify-between border-b border-slate-800/80 pb-6 flex-wrap gap-4">
+      <div class="flex items-center gap-3.5">
+        <div class="w-13 h-13 rounded-2xl bg-gradient-to-tr from-amber-400 to-amber-200 text-amber-950 flex items-center justify-center font-black text-2xl shadow-lg shadow-amber-400/20">
+          🔑
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-xl font-black text-white">مولّد مفاتيح التراخيص للمطور</h1>
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-black bg-amber-400/20 text-amber-300 border border-amber-400/30">
+              أداة خاصة بالمطور فقط 🔒
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 mt-1">
+            Rawdati Management Master Offline Key Generator (100% Offline)
+          </p>
+        </div>
+      </div>
+      <div class="text-left text-xs font-mono text-slate-500">
+        v1.0.0 Pro
+      </div>
+    </div>
+
+    <!-- Generator Form -->
+    <form id="keyForm" class="space-y-5" onsubmit="generateKey(event)">
+      
+      <!-- Machine ID Input -->
+      <div>
+        <label class="block text-xs font-extrabold text-slate-300 mb-1.5">
+          معرّف جهاز العميل (Machine ID) <span class="text-rose-400">*</span>
+        </label>
+        <div class="relative">
+          <input 
+            type="text" 
+            id="machineId" 
+            required 
+            placeholder="مثال: MID-A1B2-C3D4-5678"
+            class="w-full bg-slate-800/80 border border-slate-700 rounded-2xl px-4 py-3 text-sm font-mono-key text-amber-300 placeholder-slate-500 focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 transition-all text-left"
+            dir="ltr"
+          />
+        </div>
+        <p class="text-[11px] text-slate-400 mt-1">
+          انسخ الرمز الذي يرسله لك العميل من نافذة "تفعيل البرنامج" على جهازه
+        </p>
+      </div>
+
+      <!-- Client Name -->
+      <div>
+        <label class="block text-xs font-extrabold text-slate-300 mb-1.5">
+          اسم الروضة / العميل (اختياري)
+        </label>
+        <input 
+          type="text" 
+          id="clientName" 
+          placeholder="مثال: روضة براعم المستقبل - تونس"
+          class="w-full bg-slate-800/80 border border-slate-700 rounded-2xl px-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-400/20 transition-all"
+        />
+      </div>
+
+      <!-- License Type -->
+      <div>
+        <label class="block text-xs font-extrabold text-slate-300 mb-2">
+          نوع الرخصة المطلوبة:
+        </label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <label class="relative flex items-center gap-3 p-4 bg-slate-800/60 border border-slate-700 rounded-2xl cursor-pointer hover:border-amber-400/50 transition-all has-[:checked]:border-amber-400 has-[:checked]:bg-amber-400/10">
+            <input type="radio" name="licenseType" value="lifetime" checked onchange="toggleLicenseType()" class="accent-amber-400 w-4 h-4">
+            <div>
+              <div class="font-black text-sm text-white flex items-center gap-1.5">
+                <span>🌟 رخصة مدى الحياة</span>
+                <span class="text-[10px] px-1.5 py-0.2 bg-amber-400/20 text-amber-300 rounded font-bold">Lifetime</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-0.5">تفعيل دائم بدون أي تاريخ انتهاء</p>
+            </div>
+          </label>
+
+          <label class="relative flex items-center gap-3 p-4 bg-slate-800/60 border border-slate-700 rounded-2xl cursor-pointer hover:border-indigo-400/50 transition-all has-[:checked]:border-indigo-400 has-[:checked]:bg-indigo-400/10">
+            <input type="radio" name="licenseType" value="annual" onchange="toggleLicenseType()" class="accent-indigo-400 w-4 h-4">
+            <div>
+              <div class="font-black text-sm text-white flex items-center gap-1.5">
+                <span>📅 اشتراك سنوي محدد</span>
+                <span class="text-[10px] px-1.5 py-0.2 bg-indigo-400/20 text-indigo-300 rounded font-bold">Subscription</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-0.5">صلاحية لمدة سنة (أو حسب الاختيار)</p>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Annual Options (Hidden by default) -->
+      <div id="annualOptions" class="hidden p-4 bg-slate-800/40 border border-slate-700/80 rounded-2xl space-y-3">
+        <label class="block text-xs font-bold text-slate-300">مدة الاشتراك السنوي:</label>
+        <div class="grid grid-cols-3 gap-2">
+          <button type="button" onclick="setMonths(12)" class="month-btn py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white border border-indigo-500">12 شهراً (سنة كاملة)</button>
+          <button type="button" onclick="setMonths(6)" class="month-btn py-2 rounded-xl text-xs font-bold bg-slate-700 text-slate-300 hover:bg-slate-600">6 أشهر (نصف سنوي)</button>
+          <button type="button" onclick="setMonths(24)" class="month-btn py-2 rounded-xl text-xs font-bold bg-slate-700 text-slate-300 hover:bg-slate-600">24 شهراً (سنتان)</button>
+        </div>
+        <div class="text-[11px] text-indigo-300 flex justify-between pt-1">
+          <span>تاريخ انتهاء الصلاحية المحسوب:</span>
+          <span id="calculatedExpiryDate" class="font-mono font-bold"></span>
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <button 
+        type="submit" 
+        class="w-full py-3.5 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 hover:brightness-110 text-slate-950 font-black text-sm rounded-2xl shadow-lg shadow-amber-400/20 flex items-center justify-center gap-2 transition-all active:scale-98 cursor-pointer"
+      >
+        <span>⚡ توليد مفتاح التفعيل الفوري (Generate Key)</span>
+      </button>
+    </form>
+
+    <!-- Results Section -->
+    <div id="resultSection" class="hidden space-y-4 pt-4 border-t border-slate-800 animate-in fade-in">
+      
+      <div class="p-4 bg-slate-800/90 border border-amber-400/40 rounded-2xl space-y-3">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-extrabold text-amber-300">مفتاح التفعيل المولد:</span>
+          <span id="resultTypeBadge" class="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-400/20 text-amber-300"></span>
+        </div>
+
+        <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 flex items-center justify-between gap-2">
+          <span id="keyOutput" class="text-xs sm:text-sm font-mono-key font-black text-amber-400 select-all tracking-wider break-all text-left" dir="ltr"></span>
+          <button 
+            type="button" 
+            onclick="copyKeyOnly()" 
+            class="px-3 py-1.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs rounded-lg transition-all flex items-center gap-1.5 flex-shrink-0 cursor-pointer"
+          >
+            <span id="copyKeyText">نسخ المفتاح</span>
+          </button>
+        </div>
+
+        <div class="text-[11px] text-slate-400 flex justify-between">
+          <span>صلاحية الرخصة:</span>
+          <span id="resultExpiryText" class="font-bold text-slate-200"></span>
+        </div>
+      </div>
+
+      <!-- WhatsApp Message Box -->
+      <div class="p-4 bg-emerald-950/30 border border-emerald-500/30 rounded-2xl space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-emerald-400 flex items-center gap-1.5">
+            <span>💬 رسالة الواتساب الجاهزة للعميل:</span>
+          </span>
+          <button 
+            type="button" 
+            onclick="copyWhatsAppMessage()" 
+            class="px-3 py-1 bg-emerald-500 hover:bg-emerald-400 text-emerald-950 font-black text-xs rounded-lg transition-all flex items-center gap-1 cursor-pointer"
+          >
+            <span id="copyMsgText">نسخ الرسالة كاملة</span>
+          </button>
+        </div>
+        <textarea 
+          id="whatsappOutput" 
+          rows="8" 
+          readonly 
+          class="w-full bg-slate-950/80 border border-emerald-900/50 rounded-xl p-3 text-xs text-slate-300 font-sans focus:outline-none select-all"
+        ></textarea>
+      </div>
+
+    </div>
+
+    <!-- Security Notice -->
+    <div class="p-3.5 bg-slate-950/60 border border-slate-800 rounded-2xl text-[11px] text-slate-400 flex items-center gap-2">
+      <span class="text-base">🛡️</span>
+      <span>هذه الأداة مستقلة تماماً وخاصة بك كمطور، ولا تشارك هذا الملف مع أي عميل.</span>
+    </div>
+
+  </div>
+
+  <script>
+    let selectedMonths = 12;
+
+    function calculateDate(months) {
+      const d = new Date();
+      d.setMonth(d.getMonth() + months);
+      return d.toISOString().split('T')[0];
+    }
+
+    function updateExpiryPreview() {
+      document.getElementById('calculatedExpiryDate').innerText = calculateDate(selectedMonths);
+    }
+    updateExpiryPreview();
+
+    function setMonths(m) {
+      selectedMonths = m;
+      document.querySelectorAll('.month-btn').forEach(btn => {
+        btn.className = 'month-btn py-2 rounded-xl text-xs font-bold bg-slate-700 text-slate-300 hover:bg-slate-600';
+      });
+      event.target.className = 'month-btn py-2 rounded-xl text-xs font-bold bg-indigo-600 text-white border border-indigo-500';
+      updateExpiryPreview();
+    }
+
+    function toggleLicenseType() {
+      const isAnnual = document.querySelector('input[name="licenseType"]:checked').value === 'annual';
+      const options = document.getElementById('annualOptions');
+      if (isAnnual) {
+        options.classList.remove('hidden');
+        updateExpiryPreview();
+      } else {
+        options.classList.add('hidden');
+      }
+    }
+
+    function generateSignature(machineId, type, expiryOrLifetime) {
+      const secretSalt = 'NURSERY_OFFLINE_SECRET_SALT_TUNISIA_2026';
+      const str = `${machineId}:::${type}:::${expiryOrLifetime}:::${secretSalt}`;
+      let hash1 = 5381;
+      let hash2 = 52711;
+      for (let i = 0; i < str.length; i++) {
+        const code = str.charCodeAt(i);
+        hash1 = (hash1 * 33) ^ code;
+        hash2 = (hash2 * 33) ^ code;
+      }
+      const h1 = Math.abs(hash1).toString(16).toUpperCase().padStart(8, '0');
+      const h2 = Math.abs(hash2).toString(16).toUpperCase().padStart(8, '0');
+      return `${h1.slice(0, 4)}-${h2.slice(0, 4)}-${h1.slice(4, 8)}`;
+    }
+
+    let currentGeneratedKey = '';
+    let currentMessage = '';
+
+    function generateKey(e) {
+      e.preventDefault();
+      const rawMid = document.getElementById('machineId').value.trim().toUpperCase();
+      const clientName = document.getElementById('clientName').value.trim() || 'الروضة';
+      const type = document.querySelector('input[name="licenseType"]:checked').value;
+
+      if (!rawMid) return;
+
+      let key = '';
+      let expiryText = '';
+
+      if (type === 'lifetime') {
+        const sig = generateSignature(rawMid, 'lifetime', 'LIFETIME');
+        const midPart = rawMid.replace(/[^A-Z0-9]/g, '').slice(0, 6) || 'NURS';
+        key = `KEY-LIFE-${midPart}-${sig}`;
+        expiryText = 'رخصة كاملة مدى الحياة (غير محدد)';
+      } else {
+        const expiryDate = calculateDate(selectedMonths);
+        const sig = generateSignature(rawMid, 'annual', expiryDate);
+        const dateCompact = expiryDate.replace(/-/g, '');
+        key = `KEY-1Y-${dateCompact}-${sig}`;
+        expiryText = `اشتراك سنوي صالح حتى: ${expiryDate}`;
+      }
+
+      currentGeneratedKey = key;
+      document.getElementById('keyOutput').innerText = key;
+      document.getElementById('resultTypeBadge').innerText = type === 'lifetime' ? 'رخصة مدى الحياة' : 'اشتراك سنوي';
+      document.getElementById('resultExpiryText').innerText = expiryText;
+
+      // WhatsApp Message
+      currentMessage = `مرحباً بك،
+إليك مفتاح تفعيل منظومة إدارة الروضة الخاص بحاسوبك:
+
+🔐 مفتاح التفعيل:
+${key}
+
+🏢 الروضة: ${clientName}
+📅 نوع الترخيص: ${type === 'lifetime' ? 'رخصة كاملة مدى الحياة 🌟' : `اشتراك سنوي (${expiryText}) 📅`}
+💻 رمز الجهاز المرخص: ${rawMid}
+
+* خطوات التفعيل:
+1. افتح البرنامج على حاسوبك.
+2. انقر على زر "تفعيل البرنامج" في أعلى الشاشة أو صفحة الدخول.
+3. الصق المفتاح أعلاه واضغط على "تفعيل البرنامج الآن".
+
+شكراً لثقتكم بنا! ✨`;
+
+      document.getElementById('whatsappOutput').value = currentMessage;
+      document.getElementById('resultSection').classList.remove('hidden');
+    }
+
+    function copyKeyOnly() {
+      if (!currentGeneratedKey) return;
+      navigator.clipboard.writeText(currentGeneratedKey);
+      const btn = document.getElementById('copyKeyText');
+      btn.innerText = '✅ تم النسخ!';
+      setTimeout(() => { btn.innerText = 'نسخ المفتاح'; }, 2000);
+    }
+
+    function copyWhatsAppMessage() {
+      if (!currentMessage) return;
+      navigator.clipboard.writeText(currentMessage);
+      const btn = document.getElementById('copyMsgText');
+      btn.innerText = '✅ تم نسخ الرسالة!';
+      setTimeout(() => { btn.innerText = 'نسخ الرسالة كاملة'; }, 2000);
+    }
+  </script>
+</body>
+</html>
